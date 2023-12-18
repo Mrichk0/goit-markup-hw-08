@@ -1,0 +1,48 @@
+.client {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__cart {
+    margin: 15px;
+    height: 92px;
+
+    width: calc((100% - 2 * 30px) / 2);
+
+    @include tablet {
+      width: calc((100% - 3 * 30px) / 3);
+    }
+
+    @include desktop {
+      width: calc((100% - 6 * 30px) / 6);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    outline: none;
+    border: 1px solid var(--icon-pr-color);
+    border-radius: 5px;
+    transition: border 250ms var(--transition-timing);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+  }
+
+  &__icon {
+    fill: var(--icon-pr-color);
+    transition: fill 250ms var(--transition-timing);
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--accent-color);
+  }
+}

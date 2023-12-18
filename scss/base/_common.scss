@@ -1,0 +1,52 @@
+body {
+  background-color: var(--primary-white-color);
+  color: var(--text-primary-color);
+
+  font-family: Roboto, Verdana, Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin: 0;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+section {
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

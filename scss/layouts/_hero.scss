@@ -1,0 +1,58 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  text-align: center;
+  background-image: url("../../img/bg/bg-mobile.jpg");
+  background-image: image-set(
+    url("../../img/bg/bg-mobile.webp") 1x type("image/webp"),
+    url("../../img/bg/bg-mobile@2x.webp") 2x type("image/webp"),
+    url("../../img/bg/bg-mobile.jpg") 1x,
+    url("../../img/bg/bg-mobile@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-white-color);
+
+  @include tablet {
+    background-image: url("../../img/bg/bg-tablet.jpg");
+    background-image: image-set(
+      url("../../img/bg/bg-tablet.webp") 1x type("image/webp"),
+      url("../../img/bg/bg-tablet@2x.webp") 2x type("image/webp"),
+      url("../../img/bg/bg-tablet.jpg") 1x,
+      url("../../img/bg/bg-tablet@2x.jpg") 2x
+    );
+  }
+
+  @include desktop {
+    background-image: url("../../img/bg/bg-desktop.jpg");
+    background-image: image-set(
+      url("../../img/bg/bg-desktop.webp") 1x type("image/webp"),
+      url("../../img/bg/bg-desktop@2x.webp") 2x type("image/webp"),
+      url("../../img/bg/bg-desktop.jpg") 1x,
+      url("../../img/bg/bg-desktop@2x.jpg") 2x
+    );
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+
+    font-weight: 900;
+    font-size: 1.625rem;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @include desktop {
+      max-width: 696px;
+
+      font-size: 2.75rem;
+      line-height: 1.36;
+      letter-spacing: 2.64px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  color: #2196f3;
+  text-decoration: none;
+  font-family: Raleway;
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: 0.72px;
+
+  @include desktop {
+    font-size: 26px;
+  }
+
+  &--dark {
+    color: var(--secondary-bg-color);
+  }
+
+  &--light {
+    color: var(--primary-white-color);
+  }
+}
