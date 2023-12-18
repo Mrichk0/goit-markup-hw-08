@@ -38,19 +38,19 @@
   }
 
   &__item--antenna::before {
-    background-image: url("../../img/icons/antenna.svg");
+    background-image: url("../img/icons/antenna.svg");
   }
 
   &__item--clock::before {
-    background-image: url("../../img/icons/clock.svg");
+    background-image: url("../img/icons/clock.svg");
   }
 
   &__item--diagram::before {
-    background-image: url("../../img/icons/diagram.svg");
+    background-image: url("../img/icons/diagram.svg");
   }
 
   &__item--astronaut::before {
-    background-image: url("../../img/icons/astronaut.svg");
+    background-image: url("../img/icons/astronaut.svg");
   }
 
   &__fon:not(:last-child) {
