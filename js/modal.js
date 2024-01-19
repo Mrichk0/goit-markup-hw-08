@@ -9,5 +9,5 @@ function toggleBtn() {
   backdrop.classList.toggle("visually-hidden");
   !backdrop.classList.contains("visually-hidden")
     ? (document.body.style.overflow = "hidden")
-    : (document.body.style.overflow = " visible");
+    : (document.body.style.overflow = "visible");
 }

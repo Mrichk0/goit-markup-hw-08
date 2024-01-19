@@ -82,8 +82,6 @@ img {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  left: auto;
-  right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -636,6 +634,7 @@ img {
 }
 .work__list {
   display: flex;
+  justify-content: space-between;
 }
 .work__cart {
   cursor: pointer;
